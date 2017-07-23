@@ -1,0 +1,238 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.flex-container {
+    text-align: center;
+    overflow: auto;
+    margin: 0 auto;
+    widows: 100%;
+    height: 100%;
+}
+.flex-container > * {
+    padding: 15px;
+}
+.clearfix:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+body {
+	width: 100%;
+	background-image: url("https://s-media-cache-ak0.pinimg.com/236x/9d/31/ab/9d31ab10d5c92f548e1ea7b805689f96--subtle-textures-web-project.jpg");
+	background-size: cover;
+}
+header {
+	background-color: #fff;
+	border-color: #ccc;
+	border-style: solid;
+	display: inline-block;
+	width: 110%;
+	height: 120px;
+	position: fixed;
+	top: -10px;
+	left: -10px;
+}
+.nav {
+	clear: both;
+	float: right;
+	display: inline-block;
+	margin: 20px 400px 20px 10px;
+	text-decoration: none;
+}
+li {
+	font-size: 16px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 40px 20px 20px 10px;
+}
+a:link {
+	text-decoration: none;
+	color: #777;
+}
+.name {
+	position: fixed;
+	top: 30px;
+	text-align: center;
+	background-color: #4aaaa5;
+	color: white;
+	width: 190px;
+	height: 60px;
+	margin: 20px 0px 0px 170px;
+	padding: 5px 5px 0px 5px;
+}
+h1 {
+	text-align: center;
+	position: fixed;
+	top: 50px
+	margin-bottom: 50px;
+}
+h2, h3 {
+	text-align: left;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	width: 90%;
+	height: 10%;
+	border-bottom: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ccc;
+}
+.portfolio-header {
+	text-align: left;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	width: 90%;
+	height: 5%;
+	border-bottom: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ccc;
+}
+h1, h2, h3, h4 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+.content, .contact {
+	position: fixed;
+	top: 20%;
+	left: 170px;
+	float: left;
+	width: 650px;
+	height: 460px;
+	background-color: #fff;
+	color: #4aaaa5;
+	border-color: #ccc;
+	border-style: solid;
+	border: 1px
+}
+form {
+	color: #777;
+	text-align: left;
+	width: 730px;
+	margin-left: 30px;
+	margin-top: 15px;
+}
+.text-name, .text-email, .text-large {
+	width: 80%;
+	text-align: left;
+
+}
+.text-large {
+	height: 180px;
+	text-align: top;
+}
+.submit {
+	text-align: center;
+	background-color: #4aaaa5;
+	color: #fff;
+	border-color: #4aaaa5;
+	width: 70px;
+	height: 30px;
+}
+.portfolio {
+	position: fixed;
+	top: 150px;
+	left: 170px;
+	float: left;
+	width: 650px;
+	height: 1000px;
+	background-color: #fff;
+	color: #4aaaa5;
+	border-color: #ccc;
+	border-style: solid;
+	border: 1px;
+}
+.left-odd {
+	float: left;
+	display: block;
+	height: 1000px;
+	margin-top: 10%;
+	margin-left: 15%;
+	margin-bottom: 5px;
+	overflow: hidden;
+
+}
+.right-even {
+	float: right;
+	display: block;
+	height: 1000px;
+	margin-top: 10%;
+	margin-right: 15%;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+.odds, .evens {
+	display: block;
+}
+.pictures {
+	height: 800px;
+	overflow: scroll;
+}
+.p1 {
+	margin-left: 30px;
+}
+.p1, .p2 {
+	text-align: left;
+	text-indent: 30px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	color: #777;
+	font-size: 18px;
+}
+.bio-pic {
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.connect {
+	position: fixed;
+	top: 20%;
+	left: 60%;
+	float: left;
+	width: 270px;
+	height: 220px;
+	background-color: #fff;
+	color: #4aaaa5;
+	border-color: #ccc;
+	border-style: solid;
+	border: 1px;
+}
+.links {
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.git, .linked, .stack {
+	margin-right: 5px;
+}
+footer {
+	clear: both;
+	position: fixed;
+	left: 0px;
+	height: 80px;
+	background-color: #666;
+	bottom: 0px;
+	width: 100%;
+	margin-top: 20px;
+	border-top: 15px;
+	border-top-style: solid;
+	border-top-color: #4aaaa5;
+	color: #777;
+}
+h4 {
+	margin-top: 20px;
+}
+
+
+
+@media screen and (min-width: 767px) {
+	.flex-container {
+		width: 1024px;
+	}
+}
