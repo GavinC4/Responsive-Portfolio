@@ -27,19 +27,23 @@ body {
 header {
 	background-color: #fff;
 	border-color: #ccc;
-	border-style: solid;
+	border-bottom-width: 80%;
+	border-bottom-style: solid; 
 	display: inline-block;
-	width: 110%;
-	height: 120px;
+	width: 100%;
+	height: 10%;
 	position: fixed;
-	top: -10px;
-	left: -10px;
+	top: 0px;
+	left: 0px;
 }
 .nav {
+	position: fixed;
 	clear: both;
 	float: right;
 	display: inline-block;
-	margin: 20px 400px 20px 10px;
+	margin: 10px;
+	top: -10px;
+	right: 300px;
 	text-decoration: none;
 }
 li {
@@ -54,13 +58,14 @@ a:link {
 }
 .name {
 	position: fixed;
-	top: 30px;
+	top: -5px;
+	left: 10%;
 	text-align: center;
 	background-color: #4aaaa5;
 	color: white;
 	width: 190px;
 	height: 60px;
-	margin: 20px 0px 0px 170px;
+	margin: 20px;
 	padding: 5px 5px 0px 5px;
 }
 h1 {
@@ -83,7 +88,7 @@ h2, h3 {
 }
 .portfolio-header {
 	text-align: left;
-	margin-top: 50px;
+	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0px;
@@ -92,6 +97,10 @@ h2, h3 {
 	border-bottom: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #ccc;
+}
+h1 {
+	margin-left: auto;
+	margin-right: auto;
 }
 h1, h2, h3, h4 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
@@ -192,7 +201,7 @@ form {
 }
 .connect {
 	position: fixed;
-	top: 20%;
+	top: 15%;
 	left: 60%;
 	float: left;
 	width: 270px;
@@ -230,9 +239,276 @@ h4 {
 }
 
 
-
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 1024px) {
 	.flex-container {
-		width: 1024px;
+		width: 100%;
+	}
+	header {
+		width: 100%;
+		height: 10%;
+	}
+	.name {
+		width: 25%;
+		position: fixed;
+		left: 15%;
+		top: -5px;
+	}
+	.nav {
+		width: 40%;
+		float: right;
+		position: fixed;
+		right: 10%;
+		top: -10px;
+	}
+	.container {
+		width: 100%
+		margin: 0px auto;
+	}
+	.content {
+		width: 40%;
+		height: 70%;
+		position: fixed;
+		top: 15%;
+		left: 15%;
+	}
+	.bio-pic {
+		width: 88%;
+		height: 30%;
+	}
+	.p1, .p2 {
+		font-size: 14px;
+	}
+	.connect {
+		width: 30%;
+		position: fixed;
+		top: 15%;
+	}
+	footer {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 980px) {
+	.flex-container {
+		width: 100%;
+	}
+	header {
+		width: 100%;
+		height: 10%;
+	}
+	.name {
+		width: 25%;
+		position: fixed;
+		left: 15%;
+		top: -5px;
+	}
+	.nav {
+		width: 40%;
+		float: right;
+		position: fixed;
+		right: 10%;
+		top: -10px;
+	}
+	.container {
+		width: 100%
+		margin: 0px auto;
+	}
+	.content, .contact {
+		width: 40%;
+		height: 70%;
+		position: fixed;
+		top: 15%;
+		left: 15%;
+	}
+	form {
+		width: 100%;
+	}
+	.portfolio {
+		height: 100%;
+		width: 40%;
+		position: fixed;
+		left: 15%;
+		top: 15%;
+	}
+	.left-odd, .right-even {
+		float: left;
+	}
+	.bio-pic {
+		width: 88%;
+		height: 30%;
+	}
+	.p1, .p2 {
+		font-size: 14px;
+	}
+	.connect {
+		width: 30%;
+		position: fixed;
+		top: 15%;
+	}
+	footer {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 769px) {
+	.flex-container {
+		width: 100%;
+	}
+	header {
+		width: 100%;
+		height: 10%;
+	}
+	.name {
+		width: 25%;
+		position: fixed;
+		left: 15%;
+		top: -12px;
+	}
+	.nav {
+		width: 40%;
+		float: right;
+		position: fixed;
+		right: 10%;
+		top: -10px;
+	}
+	.container {
+		width: 100%
+		margin: 0px auto;
+	}
+	.content, .contact {
+		width: 90%;
+		height: 40%;
+		position: fixed;
+		top: 15%;
+		left: 5%;
+	}
+	.bio-pic {
+		width: 33%;
+		height: 33%;
+	}
+	.p1, .p2 {
+		font-size: 14px;
+	}
+	form {
+		width: 112%;
+		height: 60%;
+	}
+	.text-large {
+		height: 40%;
+	}
+	.portfolio {
+		height: 60%;
+		width: 90%;
+		position: fixed;
+		left: 5%;
+		top: 15%;
+		overflow: hidden;
+	}
+	.connect {
+		width: 90%;
+		height: 20%;
+		position: fixed;
+		top: 60%;
+		left: 5%;
+		padding-top: 0px;
+	}
+	.portfolio-connect {
+		top: 80%;
+	}
+	.links {
+		float: left;
+	}
+	h2 {
+		margin-top: 10px;
+		margin-bottom: 15px;
+		bottom: 10px;
+	}
+	h3 {
+		margin-top: 15px;
+		vertical-align: top;
+		text-align: top;
+	}
+	footer {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 640px) {
+	.flex-container {
+		width: 100%;
+	}
+	header {
+		width: 100%;
+		height: 10%;
+	}
+	.name {
+		width: 30%;
+		position: fixed;
+		left: 5%;
+		top: -12px;
+	}
+	.nav {
+		width: 40%;
+		float: right;
+		position: fixed;
+		right: 10%;
+		top: -10px;
+	}
+	.container {
+		width: 100%
+		margin: 0px auto;
+	}
+	.content, .contact {
+		width: 90%;
+		height: 40%;
+		position: fixed;
+		top: 15%;
+		left: 5%;
+	}
+	.bio-pic {
+		width: 33%;
+		height: 33%;
+	}
+	.p1, .p2 {
+		font-size: 14px;
+	}
+	form {
+		width: 112%;
+		height: 60%;
+	}
+	.text-large {
+		height: 40%;
+	}
+	.portfolio {
+		height: 60%;
+		width: 90%;
+		position: fixed;
+		left: 5%;
+		top: 15%;
+		overflow: hidden;
+	}
+	.connect {
+		width: 90%;
+		height: 20%;
+		position: fixed;
+		top: 60%;
+		left: 5%;
+		padding-top: 0px;
+	}
+	.portfolio-connect {
+		top: 80%;
+	}
+	.links {
+		float: left;
+	}
+	h2 {
+		margin-top: 10px;
+		margin-bottom: 15px;
+		bottom: 10px;
+	}
+	h3 {
+		margin-top: 15px;
+		vertical-align: top;
+		text-align: top;
+	}
+	footer {
+		width: 100%;
 	}
 }
